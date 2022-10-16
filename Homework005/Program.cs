@@ -22,20 +22,13 @@ void PrintResult(int[] array)
     int summ = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i] % 2 == 0) 
-        {
-            
-        }
-        else 
-        {
-            summ = summ + array[i];            
-        }
+        if (i % 2 > 0) 
+            summ = summ + array[i];  
+               
     }
-    Console.WriteLine($"Сумма нечетных чисел в данном массиве равна {summ}");
+    Console.WriteLine($"Сумма чисел стоящих на нечетных позициях равна {summ}");
     Console.WriteLine();
 }
-PrintResult(array);
-
-    
+PrintResult(array);   
     
 
